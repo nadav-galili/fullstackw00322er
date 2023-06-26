@@ -116,3 +116,191 @@ echo 'a' <=> 'A' // output 1
 // $user = 'aVi cOhEn';
 // $user = strtolower($user);
 // echo ucwords($user);
+
+// $str = 'Hello world';
+// echo $str.'<hr>';
+// $str = str_replace('world', 'Man', $str);
+// echo $str;
+
+// $isbn = 'abb-yy-tre';
+// //abyytre
+// $isbn = str_replace('-','', $isbn);
+// echo $isbn;
+
+// $str = 'HEllo';
+// $str = str_ireplace('he', 'A',$str);
+// echo $str;
+
+//clean url
+
+// $title = '    Pro q fiNe Dell 45xp   ';
+// $title = trim($title);
+// $title = strtolower($title);
+// $title = str_replace(' ', '-', $title);
+// echo $title;
+
+
+// $str = 'Hello';
+// echo strpos($str,'H');
+
+// $str = 'wHelwlow World';
+// $res =  stripos($str , 'w');
+// echo $res;
+
+//SELE
+
+
+// my_query("INSERT  INTO users");
+
+// function my_query($sql){
+
+//     if(stripos($sql, 'SELECT') === 0){
+//         select($sql);
+//     }
+
+//     if(stripos($sql, 'INSERT') === 0){
+//         insert($sql);
+//     }
+// }
+
+// function select($sql){
+//     echo 'im a select query';
+// }
+
+// function insert($sql){
+//     echo 'im an insert query';
+// }
+
+
+
+
+// operator by refrence
+
+// $x = 3;
+// $y =& $x;
+// $x = 17;
+// $y = 20;
+
+// echo "\$x :$x <br>";
+// echo "\$y: $y <br>";
+
+
+//  PAAMAYAM NEKUDOTAYM ::
+
+
+// && || 
+
+// $is_login = true;
+// $email = 'avi@gmail.com';
+// $res = $is_login && $email;
+
+// if($res){
+//     //connect user
+// }
+
+// if ($res){
+
+// }
+
+
+// if ( $is_login && $email){
+//     //connect user
+// }
+
+// if($is_login && $email){
+//     echo $email;
+// }
+
+
+// $res = true && true;
+// $res = true && false;
+// $res = 15 && 'hi';
+// var_dump($res);
+
+
+
+// $res1 = true && false;
+// $res2 = true and false;
+// var_dump($res1);
+// var_dump($res2);
+
+
+
+// if (true && false){}
+
+// if(true and false){}
+
+// $is_login = true;
+// $email = '';
+// $res = $is_login and $email;
+
+
+
+
+// if ($res){
+//     echo 'bingo';
+// }
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+
+// if(true || $x ){
+//     echo 'in';
+// }
+
+
+///XOR ^
+
+// if(true ^ false){
+//     echo 'hi';
+// }
+
+/*
+falsy
+============
+empty string ''
+0
+'0'
+empty array []
+null
+false
+*/
+
+//ISSET
+// $num = 0;
+// if(isset($num)){
+//     echo 'code 1 <br>';
+//     echo 'code 2 <br>';
+//     echo 'code 3 <br>';
+//     echo 'code 4 <br>';
+// }
+
+// $name = 'moshe';
+
+// if(isset($name) && $name){
+//     echo 'your name is:' .$name;
+// }
+
+//empty
+//checks if isset && value is truthy
+
+// if(!empty($name)){
+//     echo 'your name is: '.$name;
+// }
+
+// $num = 0;
+
+// if(!empty($num)){
+//     echo 1;
+// }else{
+//     echo 2;
+// }
+
+// $x='';
+// if(empty($x)){
+//     echo 'abc';
+// }else{
+//     echo 'bingo';
+// }
