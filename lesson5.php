@@ -2,7 +2,6 @@
 
 /// anonymos function PHP>= 5.4
 
-use function PHPSTORM_META\map;
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
