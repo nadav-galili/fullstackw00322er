@@ -31,8 +31,13 @@
 //     }
 // }
 
-unlink('data.txt');
+
+//how to delete file
+// unlink('data.txt');
 
 
-
+// $file = 'hits-counter.txt';
+// $count = file_get_contents($file);
+// file_put_contents($file, ++$count);
+// echo $count;
 ?>
