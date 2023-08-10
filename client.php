@@ -1,15 +1,26 @@
-<?php 
+<?php
 
-require_once 'lesson13.php';
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+
+require_once 'DB.php';
 
 $db = new DB();
-$connection = $db->connect('eshop');
-echo '<pre>';
-print_r($connection);
-echo '</pre>';
+$db->connect('eshop');
+$users = $db->select('SELECT * FROM users');
+foreach($users as $user){
+    echo $user['name'] . '<br>';
+}
+
+$db->close();
 
 
-$diggConnection = $db->connect('digg');
-echo '<pre>';
-print_r($diggConnection);
-echo '</pre>';
+// $eshop_db = new DB();
+// $eshop_db->connect('eshop');
+
+//encapsulation
+
+
+?>
